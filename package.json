@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "material-ui": "^1.0.0-alpha.22",
     "material-ui-icons": "^1.0.0-alpha.19",
     "react": "^15.6.1",
@@ -10,7 +11,10 @@
     "react-scripts": "1.0.10",
     "typeface-roboto": "0.0.31"
   },
+  "homepage": "https://williamfligor.github.io/travel_time",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
